@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatiable" content="ie=edge">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="css/main copy.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    //scroll to top on page refresh (PART1)
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    }
+    function scrollfromto(from, to) {
+      $(`#${from}`).click(function() {
+        $('html, body').animate({
+            scrollTop: $(`#${to}`).offset().top
+        }, 2000);
+    });
+    }
+
+
+    $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container-fluid header">
+        <img class="logo-header" src="images/BAN GIAO LOGO TOAN PHAT CHUAN-10.png">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav header-title">
+            <a href="#home" class="nav-item nav-link active">TRANG CHỦ</a>
+            <a href="#shophouse" class="nav-item nav-link">SHOPHOUSE</a>
+            <a href="#location" class="nav-item nav-link">VỊ TRÍ</a>
+            <a href="#flat" class="nav-item nav-link">MẶT BẰNG</a>
+            <a href="#utilities" class="nav-item nav-link">TIỆN ÍCH</a>
+            <a href="#info" class="nav-item nav-link">THÔNG TIN</a>
+        </div>
+        <div class="navbar-nav ml-auto">
+          <div class="hotline nav-item">HOTLINE 0236 3 999 999</div>
+        </div>
+        </div>
+        
+    </div>    
+  </nav>
+  <div id="home-container" class="container-fluid">
+    <section id="home" class="banner d-flex">
+      <div class="contact-banner">
+        <div class="image-gradient"></div>
+        <!-- <img class="contact-img" src="images/3324055i-01.jpg" /> -->
+        <div class="contact-title">DỰ ÁN SHOPHOUSE</div>
+        <div class="contact-title2">TOÀN PHÁT</div>
+        <div class="company-location-banner d-flex justify-content-between">
+          <div class="company-item">
+            <div class="company-content"><b>VĨNH PHÚC</b><br/>Thị trấn Thổ Tang, xã Tân Tiến,<br/>xã Lũng Hòa, huyện Vĩnh Tường</div>
+            <div class="company-title">Địa chỉ</div>
+          </div>
+          <div class="company-item">
+            <div class="company-content number"><b>85-384</b><br/>m2</div>
+            <div class="company-title">Diện tích căn hộ</div>
+          </div>
+          <div class="company-item">
+            <div class="company-content number"><b>196</b><br/>căn</div>
+            <div class="company-title">Số lượng căn hộ</div>
+          </div>
+        </div>
+        <div class="contact-title-banner">ĐĂNG KÝ NHẬN THÔNG TIN DỰ ÁN</div>
+        <div class="contact-box contact-box-banner">
+          <input type="text" id="name" class="form-control" placeholder="Họ và tên">
+          <input type="text" id="email" class="form-control" placeholder="Email của bạn">
+          <div class="d-flex flex-row-reverse">
+            <div class="btn-send"><img class="icon-send" src="images/send.svg"/>ĐĂNG KÝ</div>
+            <input type="text" id="phonenumber" class="form-control" placeholder="Số điện thoại" class="flex-grow-1">
+          </div>
+        </div>
+        <div class="hotline-box hotline-box-banner">
+          Hotline<br/><b>0236 3 999 999</b>
+        </div>
+      </div>
+      <div class="left-banner d-flex">
+        <div class="image-gradient"></div>
+        <img class="banner-img" src="images/c15dca2c9923627d3b32.jpg" />
+        <img class="title-banner" src="images/894-02.png" />
+      </div>
+    </section>
+    <section id="shophouse" class="shophouse d-flex">
+      <div class="shophouse-header flex-grow-1">
+        <img class="shophouse-img" src="images/2288-01.png" />
+        <div class="shophouse-title">
+          <div class="shophouse-title1">SHOPHOUSE</div>
+          <div class="shophouse-title2">TOÀN PHÁT</div>
+          <div class="shophouse-title3">
+            <b>Toạ lạc tại thị trấn Thổ Tang</b> - vùng đất trù phú với thiên thời, địa lợi, nhân hoà - khu phố thương mại
+            Toàn Phát ra đời với mong muốn xây dựng một khu đô thị phong cách châu Âu cổ điển, cân bằng giữa yếu tố thiên
+            nhiên, con người và các giá trị sống tốt đẹp.
+            Dự án được đầu tư bởi <b>Công ty CP đầu tư An Huy</b> với khả năng sinh lời vượt trội, pháp lý rõ ràng, sổ đỏ
+            dài lâu, hạ tầng hoàn thiện, đồng bộ.
+          </div>
+        </div>
+      </div>
+      <div class="shophouse-item1">
+        <img class="shophouse-item1-img" src="images/0a.jpg" />
+      </div>
+    </section>
+    <div class="shophouse-images d-flex">
+      <div class="shophouse-images-item">
+        <img class="shophouse-item-img" src="images/congd.jpg" />
+        <div class="shophouse-item-title">ĐẤT VÀNG <br/>TRUNG TÂM THỔ TANG</div>
+      </div>
+      <div class="shophouse-images-item">
+        <img class="shophouse-item-img" src="images/congd.jpg" />
+        <div class="shophouse-item-title">PHONG CÁCH <br/> CHÂU ÂU</div>
+      </div>
+      <div class="shophouse-images-item">
+        <img class="shophouse-item-img" src="images/b.jpg" />
+        <div class="shophouse-item-title">ĐA DẠNG TRẢI NGHIỆM TIỆN ÍCH</div>
+      </div>
+    </div>
+    <section id="location" class="section"></section>
+    <section id="info" class="info d-flex">
+      <div class="info-image">
+        <img class="info-img" src="images/congd.jpg"/>
+      </div>
+      <div class="info-detail flex-grow-1">
+        <div class="info-title">THÔNG TIN DỰ ÁN</div>
+        <div class="info-content">
+          <div class="info-content-line"><b>Chủ đầu tư:</b> Công ty Cổ phần đầu tư An Huy</div>
+          <div class="info-content-line"><b>Đơn vị thiết kế:</b> Công ty cổ phần tư vấn thiết kế và đầu tư xây dựng số 1 Hà Nội</div>
+          <div class="info-content-line"><b>Đơn vị thi công:</b> Công ty Cổ phần KK Sapa</div>
+          <div class="info-content-line"><b>Đơn vị quản lý:</b> Công ty Cổ phần đầu tư An Huy</div>
+          <br/>
+          <div class="info-content-line"><b>Diện tích:</b> 3,8495 ha</div>
+          <div class="info-content-line"><b>Diện tích sàn xây dựng:</b> 25.579,5m2</div>
+          <div class="info-content-line"><b>Diện tích khuôn viên:</b> 690m2</div>
+          <div class="info-content-line"><b>Số block:</b> 7</div>
+          <div class="info-content-line"><b>Số tầng:</b> 4 tầng</div>
+          <div class="info-content-line"><b>Số căn hộ:</b> 196</div>
+          <div class="info-content-line"><b>Diện tích căn hộ:</b> 85-384m2</div>
+        </div>
+      </div>
+    </section>
+    <div id="info2" class="info2 d-flex">
+      <div class="info2-content left">
+        <div class="info2-title title-content">
+          AN CƯ TRỌN ĐỜI<br/>SINH LỜI BỀN VỮNG
+        </div>
+        <div class="info2-detail">
+          Được quy hoạch để trở thành Khu phố hiện đại, sầm uất bậc nhất thị trấn Thổ Tang, Khu phố thương mại Toàn Phát được xây dựng và phát triển theo phong cách Shophouse cao cấp. Mặt tiền tầng 1 thông thoáng được sử dụng để kinh doanh hoặc cho thuê làm văn phòng, cửa hàng. Các tầng trên làm không gian sinh hoạt với không gian rộng rãi, tiện nghi.
+          Khu phố còn quy tụ hàng loạt các công trình tiện ích như: Trung tâm thương mại, khu Shophouse, bãi đỗ xe, khu cây xanh, vườn hoa… hứa hẹn sẽ trở thành điểm sáng an cư và đầu tư sinh lời hấp dẫn, bền vững.
+        </div>
+      </div>
+      <div class="info2-content right">
+        <div class="info2-title title-content">
+          LÍ DO LỰA CHỌN<br/>SHOPHOUSE TOÀN PHÁT
+        </div>
+        <div class="info2-detail">
+          Với nhiều năm kinh nghiệm phát triển các khu đô thị thông minh, Chủ đầu tư mong muốn Shophouse Toàn Phát sẽ là sự tổng hoà giữa thiên nhiên và con người, thoả mãn các giá trị sống và các cơ hội đầu tư, hướng đến mục tiêu "An cư trọn đời – Sinh lời bền vững".
+          Những lí do giúp Shophouse Toàn Phát chinh phục khách hàng:
+          • Vị trí “Vàng” trung tâm sầm uất nhất thị trấn Thổ Tang
+          • Khả năng sinh lời vượt trội
+          • Chủ đầu tư uy tín
+          • Pháp lý rõ ràng, sổ đỏ dài lâu
+          • Hạ tầng hoàn thiện, đồng bộ
+        </div>
+      </div>
+    </div>
+    <section id="utilities" class="utilities d-flex">
+      <div class="utilities-content">
+        <div class="utilities-content-title">TIỆN ÍCH DỰ ÁN</div>
+        <div class="utilities-content-detail">
+          <b>Khu phố thương mại Toàn Phát</b> tọa lạc trên đất “Vàng” trung tâm thị trấn Thổ Tang – với hạ tầng giao thông phát triển, cư dân có thể di chuyển nhanh chóng, thuận tiện tới nhiều địa điểm trọng yếu trong và ngoài khu vực cũng như các tỉnh thành lân cận như: Hà Nội, Thái Nguyên, Phú Thọ,…
+
+          <b>Điểm trung chuyển và phân phối hàng hóa Thổ Tang</b>
+          <b>Chợ Giang</b> 650m
+          <b>Bến xe Thổ Tang:</b> 700m
+          UBND thị trấn Thổ Tang: 1km
+          <b>Trường TH Thổ Tang, Trường TH Nguyễn Thái Học:</b> 1,2km
+          <b>Trường THCS thị trấn Thổ Tang:</b> 1,3km
+          <b>Phòng Khám đa khoa Nam Long:</b> 2,5km
+          <b>Trường CĐ Nghề số 2:</b> 3,5km
+          <b>Trường THPT Nguyễn Thị Giang:</b> 4,5km
+        </div>
+      </div>
+      <div class="utilities-image">
+        <img class="utilities-img" src="images/Screenshot 2020-09-17 023029.jpg"/>
+      </div>
+    </section>
+    <section id="flat" class="flat d-flex flex-column">
+      <div class="flat-title">MẶT BẰNG TOÀN KHU</div>
+      <img class="flat-img" src="images/1.jpg"/>
+      <div class="flat-title">MẶT BẰNG CẮN ĐIỂN HÌNH</div>
+      <img class="flat-img" src="images/pdf 6x17 tthuong-1.jpg"/>
+    </section>
+    <div id="images" class="images d-flex justify-content-between">
+      <div class="image-item">
+        <div class="image-gradient"></div>
+        <img class="img-item" src="images/0a.jpg"/>
+        <div class="images-title">VƯỜN HOA CÔNG VIÊN</div>
+        <div class="images-content">Các mảng xanh tự nhiên giúp cư dân<br/>cân bằng cuộc sống</div>
+      </div>
+      <div class="image-item">
+        <div class="image-gradient"></div>
+        <img class="img-item" src="images/2092.jpg"/>
+        <div class="images-title">HỒ BƠI NGOÀI TRỜI</div>
+        <div class="images-content">Hồ bơi thiết kế hiện đại, phù hợp cho<br/> cả trẻ em</div>
+      </div>
+      <div class="image-item">
+        <div class="image-gradient"></div>
+        <img class="img-item" src="images/Phòng Gym.jpg"/>
+        <div class="images-title">PHÒNG TẬP GYM</div>
+        <div class="images-content">Phòng Gym trang bị máy móc hiện đại,<br/>thoáng đãng và rộng rãi</div>
+      </div>
+    </div>
+    <div id="images2" class="images d-flex justify-content-between">
+      <div class="image-item">
+        <div class="image-gradient"></div>
+        <img class="img-item" src="images/Bảo vệ 24_7.jpg"/>
+        <div class="images-title">BẢO VỆ 24/7</div>
+        <div class="images-content">Chúng tôi luôn đặt sự riêng tư và an toàn<br/>của cư dân lên hàng đầu</div>
+      </div>
+      <div class="image-item">
+        <div class="image-gradient"></div>
+        <img class="img-item" src="images/Khu trẻ em.jpg"/>
+        <div class="images-title">SÂN CHƠI TRẺ EM</div>
+        <div class="images-content">Một sân chơi riêng để trẻ kết nối cùng bạn bè,<br/>thoả sức hiếu động và khám phá</div>
+      </div>
+      <div class="image-item">
+        <div class="image-gradient"></div>
+        <img class="img-item" src="images/Khu cafe.jpg"/>
+        <div class="images-title">KHU CAFE</div>
+        <div class="images-content">Tận hưởng những tách cafe sáng sớm, những<br/> cuộc hẹn cuối tuần ngay tại cafe khuôn viên</div>
+      </div>
+    </div>
+    <div class="seperate-footer"></div>
+    <div id="footer" class="footer d-flex">
+      <div class="footer-left">
+        <div class="footer-img-area">
+          <img class="footer-img" src="images/BAN GIAO LOGO TOAN PHAT CHUAN-10.png"/>
+        </div>
+        <div class="footer-title">DỰ ÁN SHOPHOUSE TOÀN PHÁT</div>
+        <div class="company-location d-flex justify-content-between">
+          <div class="company-item">
+            <div class="company-content"><b>VĨNH PHÚC</b><br/>Thị trấn Thổ Tang, xã Tân Tiến,<br/>xã Lũng Hòa, huyện Vĩnh Tường</div>
+            <div class="company-title">Địa chỉ</div>
+          </div>
+          <div class="company-item">
+            <div class="company-content number"><b>85-384</b><br/>m2</div>
+            <div class="company-title">Diện tích căn hộ</div>
+          </div>
+          <div class="company-item">
+            <div class="company-content number"><b>196</b><br/>căn</div>
+            <div class="company-title">Số lượng căn hộ</div>
+          </div>
+        </div>
+        <div class="d-flex footer-menu justify-content-between">
+          <a href="#shophouse" class="footer-menu-item">SHOPHOUSE</a>
+          <a href="#location" class="footer-menu-item">VỊ TRÍ</a>
+          <a href="#flat" class="footer-menu-item">MẶT BẰNG</a>
+          <a href="#utilities" class="footer-menu-item">TIỆN ÍCH</a>
+          <a href="#info" class="footer-menu-item">THÔNG TIN</a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="hotline-box">
+          Hotline<br/><b>0236 3 999 999</b>
+        </div>
+        <div class="footer-title">ĐĂNG KÝ NHẬN THÔNG TIN DỰ ÁN</div>
+        <div class="contact-box">
+          <input type="text" id="name" class="form-control" placeholder="Họ và tên">
+          <input type="text" id="email" class="form-control" placeholder="Email của bạn">
+          <div class="d-flex flex-row-reverse">
+            <div class="btn-send"><img class="icon-send" src="images/send.svg"/>ĐĂNG KÝ</div>
+            <input type="text" id="phonenumber" class="form-control" placeholder="Số điện thoại" class="flex-grow-1">
+          </div>
+        </div>
+        <div class="footer-title">KẾT NỐI VỚI CHÚNG TÔI</div>
+        <div class="d-flex socical-box justify-content-around">
+          <img class="icon-social" src="images/facebook-logo-png-transparent-background-1024x1024-white.svg"/>
+          <img class="icon-social" src="images/blackberry-messenger.svg"/>
+          <img class="icon-social" src="images/internet.svg"/>
+          <img class="icon-social" src="images/zalo-whit.svg"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
