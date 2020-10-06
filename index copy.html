@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatiable" content="ie=edge">
   <title>Landing Page</title>
-  <link rel="stylesheet" href="css/main copy.css">
+  <link rel="stylesheet" href="css/dist/main_copy.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -72,32 +72,31 @@
           <div class="hotline nav-item">HOTLINE 0236 3 999 999</div>
         </div>
         </div>
-        
     </div>    
   </nav>
   <div id="home-container" class="container-fluid">
     <section id="home" class="banner d-flex">
       <div class="contact-banner">
-        <div class="image-gradient"></div>
-        <!-- <img class="contact-img" src="images/3324055i-01.jpg" /> -->
         <div class="contact-title">DỰ ÁN SHOPHOUSE</div>
         <div class="contact-title2">TOÀN PHÁT</div>
-        <div class="company-location-banner d-flex justify-content-between">
+        <div class="company-location-banner">
           <div class="company-item">
             <div class="company-content"><b>VĨNH PHÚC</b><br/>Thị trấn Thổ Tang, xã Tân Tiến,<br/>xã Lũng Hòa, huyện Vĩnh Tường</div>
             <div class="company-title">Địa chỉ</div>
           </div>
-          <div class="company-item">
-            <div class="company-content number"><b>85-384</b><br/>m2</div>
-            <div class="company-title">Diện tích căn hộ</div>
-          </div>
-          <div class="company-item">
-            <div class="company-content number"><b>196</b><br/>căn</div>
-            <div class="company-title">Số lượng căn hộ</div>
+          <div class="company-item-group">
+            <div class="company-item">
+              <div class="company-content number"><b>85-384</b><br/>m2</div>
+              <div class="company-title">Diện tích căn hộ</div>
+            </div>
+            <div class="company-item">
+              <div class="company-content number"><b>196</b><br/>căn</div>
+              <div class="company-title">Số lượng căn hộ</div>
+            </div>
           </div>
         </div>
-        <div class="contact-title-banner">ĐĂNG KÝ NHẬN THÔNG TIN DỰ ÁN</div>
-        <div class="contact-box contact-box-banner">
+        <div class="contact-title">ĐĂNG KÝ NHẬN THÔNG TIN DỰ ÁN</div>
+        <div class="contact-box">
           <input type="text" id="name" class="form-control" placeholder="Họ và tên">
           <input type="text" id="email" class="form-control" placeholder="Email của bạn">
           <div class="d-flex flex-row-reverse">
@@ -105,9 +104,10 @@
             <input type="text" id="phonenumber" class="form-control" placeholder="Số điện thoại" class="flex-grow-1">
           </div>
         </div>
-        <div class="hotline-box hotline-box-banner">
+        <div class="hotline-box">
           Hotline<br/><b>0236 3 999 999</b>
         </div>
+        <div class="image-gradient"></div>
       </div>
       <div class="left-banner d-flex">
         <div class="image-gradient"></div>
@@ -115,9 +115,9 @@
         <img class="title-banner" src="images/894-02.png" />
       </div>
     </section>
+
     <section id="shophouse" class="shophouse d-flex">
-      <div class="shophouse-header flex-grow-1">
-        <img class="shophouse-img" src="images/2288-01.png" />
+      <div class="shophouse-header">
         <div class="shophouse-title">
           <div class="shophouse-title1">SHOPHOUSE</div>
           <div class="shophouse-title2">TOÀN PHÁT</div>
