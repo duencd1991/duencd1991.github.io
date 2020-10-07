@@ -615,54 +615,13 @@
 /*Smart phone*/
 /*Ipad dọc(768 x 1024)*/
 @media screen and (min-width: 768px) {
-  .banner .contact-banner .contact-title {
-    font-size: 30px;
-    line-height: 35px;
-  }
-  .banner .contact-banner .contact-title2 {
-    font-size: 35px;
-    line-height: 40px;
-  }
-  .banner .contact-box {
-    width: calc(100% - 20px);
-    margin: 32px auto;
-    height: auto;
-  }
-  .banner .contact-box .form-control {
-    height: 35px;
-  }
-  .banner .contact-box .btn-send {
-    font-size: 20px;
-    line-height: 40px;
-    width: 200px;
-    padding: 0;
-    height: 35px;
-  }
-  .banner .hotline-box {
-    height: 50px;
-    font-size: 20px;
-    line-height: 25px;
-    width: 250px;
-    margin: 20px auto;
-  }
-  .banner .hotline-box b {
-    font-size: 25px;
-  }
-
-  .company-location {
-    margin-top: 32px;
-  }
-  .company-location .company-item {
-    min-height: 100px;
-  }
   .company-location .company-item .company-content {
-    font-size: 20px;
-    line-height: 25px;
-    padding: 8px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .company-location .company-item .company-content b {
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 35px;
   }
   .company-location .company-item .company-content .number {
     font-size: 30px;
@@ -673,16 +632,36 @@
     line-height: 40px;
   }
   .company-location .company-item .company-title {
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 16px;
+    line-height: 25px;
   }
-  .company-location .location1 {
-    padding: 0;
+  .header .header-title {
+    font-size: 20px;
+  }
+  .header .hotline {
+    font-size: 20px;
   }
 
-  .shophouse .shophouse-header .shophouse-title {
-    padding-top: 175px;
+  .banner .contact-banner .contact-title {
+    font-size: 25px;
+    line-height: 30px;
   }
+  .banner .contact-banner .contact-title2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .banner .contact-box .btn-send {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .banner .hotline-box {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .banner .hotline-box b {
+    font-size: 25px;
+  }
+
   .shophouse .shophouse-header .shophouse-title .shophouse-title1 {
     font-size: 25px;
     line-height: 30px;
@@ -695,12 +674,69 @@
     font-size: 16px;
     line-height: 20px;
   }
-  .shophouse-images {
-    flex-direction: column;
-  }
   .shophouse-images .shophouse-images-item .shophouse-item-title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .info .info-detail .info-title {
     font-size: 30px;
     line-height: 35px;
+  }
+  .info .info-detail .info-content {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .info2 .info2-content .info2-title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .info2 .info2-content .info2-detail {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .utilities .utilities-content .utilities-content-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .utilities .utilities-content .utilities-content-detail {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .flat .flat-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .images .image-item .images-title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .images .image-item .images-content {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .footer .footer-title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .footer .footer-right .hotline-box {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .footer .footer-right .contact-box .form-control {
+    height: 40px;
+    font-size: 20px;
+  }
+  .footer .footer-right .contact-box .btn-send {
+    line-height: 40px;
+    height: 40px;
+  }
+  .footer .footer-menu .footer-menu-item {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 /*Ipad ngang(1024 x 768)*/
