@@ -30,7 +30,7 @@
   font-size: 12px;
   line-height: 16px;
   color: #1B4635;
-  background: linear-gradient(302.34deg, #FFF9BF -0.41%, #D7A657 192.93%);
+  background: linear-gradient(294.14deg, #FBDE85 -80.2%, #D8A530 -44.63%, #FBDE84 -11.21%, #E3B74C 35.14%, #FBDE84 68.82%, #C58502 126.77%);
   border-radius: 10px 10px 0px 0px;
   padding: 6px;
   -webkit-border-radius: 10px 10px 0px 0px;
@@ -151,6 +151,7 @@
 
 .navbar {
   padding: 0 !important;
+  background: #1A4237;
 }
 .navbar .nav-item::hover {
   color: #FFF;
@@ -809,3 +810,318 @@
 }
 /*Ipad ngang(1024 x 768)*/
 /*Desktop 1920*/
+@media screen and (min-width: 1920px) {
+  .company-location {
+    margin: 38px auto 65px;
+    max-width: 646px;
+  }
+  .company-location .company-item .company-content {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .company-location .company-item .company-content b {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .company-location .company-item .company-content .number {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .company-location .company-item .company-content .number b {
+    font-size: 50px;
+    line-height: 63px;
+  }
+  .company-location .company-item .company-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .company-location .location1 {
+    margin: 0;
+    padding: 0;
+    max-width: 318px;
+  }
+  .company-location .location2 {
+    margin: 0;
+    max-width: 154px;
+  }
+
+  .header {
+    flex-wrap: wrap !important;
+    padding: 0 8px !important;
+    max-width: 1440px;
+  }
+  .header .header-title {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 0;
+    margin-right: 161px;
+    margin-left: 101px;
+  }
+  .header .hotline {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 0;
+    min-width: 150px;
+  }
+
+  .banner {
+    flex-direction: row-reverse;
+  }
+  .banner .contact-banner {
+    min-width: 762px;
+    padding-top: 145px;
+  }
+  .banner .contact-banner .contact-title {
+    font-size: 35px;
+    line-height: 44px;
+    margin: 0;
+  }
+  .banner .contact-banner .contact-title.register {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .banner .contact-banner .contact-title2 {
+    font-size: 50px;
+    line-height: 63px;
+    margin: 0;
+  }
+  .banner .left-banner .title-banner {
+    max-width: 673px;
+    bottom: 77px;
+  }
+  .banner .contact-box {
+    max-width: 516px;
+    margin: 14px auto 31px;
+  }
+  .banner .contact-box .form-control {
+    height: 44px;
+    font-size: 16px;
+  }
+  .banner .contact-box .btn-send {
+    height: 44px;
+    font-size: 16px;
+    width: 175px;
+  }
+  .banner .contact-box .btn-send .icon-send {
+    margin-right: 11px;
+  }
+  .banner .hotline-box {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 auto;
+  }
+  .banner .hotline-box b {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .shophouse {
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .shophouse .shophouse-header {
+    width: 783px;
+    height: auto;
+    margin-left: 50px;
+  }
+  .shophouse .shophouse-header .shophouse-title {
+    width: 450px;
+    height: auto;
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: unset;
+    padding-top: 140px;
+    margin: auto;
+  }
+  .shophouse .shophouse-header .shophouse-title .shophouse-title1 {
+    font-size: 30px;
+    line-height: 38px;
+    margin: 0 auto;
+  }
+  .shophouse .shophouse-header .shophouse-title .shophouse-title2 {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0 auto;
+  }
+  .shophouse .shophouse-header .shophouse-title .shophouse-title3 {
+    font-size: 18px;
+    line-height: 35px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .shophouse .shophouse-item1 {
+    height: 681px;
+    width: 1062px;
+  }
+  .shophouse .shophouse-item1 .shophouse-item1-img {
+    height: 864px;
+    width: 1062px;
+  }
+
+  .shophouse-images {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .shophouse-images .shophouse-images-item {
+    max-width: 627px;
+  }
+  .shophouse-images .shophouse-images-item .shophouse-item-img {
+    width: 100%;
+  }
+  .shophouse-images .shophouse-images-item .shophouse-item-title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 34px;
+  }
+
+  .info {
+    flex-direction: row;
+  }
+  .info .info-image {
+    width: auto;
+  }
+  .info .info-image .info-img {
+    width: 1157px;
+  }
+  .info .info-detail .info-title {
+    font-size: 50px;
+    line-height: 63px;
+    margin: 105px auto 39px;
+  }
+  .info .info-detail .info-content {
+    font-size: 22px;
+    line-height: 35px;
+    margin-left: 146px;
+  }
+
+  .info2 {
+    flex-direction: row;
+    min-height: 700px;
+  }
+  .info2 .info2-content.left .info2-detail {
+    margin-left: 243px;
+  }
+  .info2 .info2-content.right .info2-detail {
+    margin-left: 91px;
+  }
+  .info2 .info2-content .info2-title {
+    font-size: 35px;
+    line-height: 44px;
+    margin: 61px auto 32px;
+  }
+  .info2 .info2-content .info2-detail {
+    font-size: 22px;
+    line-height: 40px;
+    max-width: 629px;
+  }
+
+  .utilities {
+    flex-direction: row;
+  }
+  .utilities .utilities-content {
+    padding: 0;
+  }
+  .utilities .utilities-content .utilities-content-title {
+    font-size: 35px;
+    line-height: 44px;
+    margin: 64px auto 36px;
+  }
+  .utilities .utilities-content .utilities-content-detail {
+    font-size: 22px;
+    line-height: 35px;
+    margin-left: 243px;
+  }
+  .utilities .utilities-image .utilities-img {
+    height: 100%;
+  }
+
+  .flat .flat-title {
+    font-size: 35px;
+    line-height: 44px;
+    margin: 65px auto 16px;
+  }
+  .flat .flat-img {
+    width: 1440px;
+  }
+
+  .images {
+    flex-direction: row;
+  }
+  .images .image-item {
+    max-width: 627px;
+  }
+  .images .image-item:last-child {
+    margin-bottom: 10px;
+  }
+  .images .image-item .images-title {
+    font-size: 30px;
+    line-height: 38px;
+    bottom: 102px;
+  }
+  .images .image-item .images-content {
+    font-size: 22px;
+    line-height: 35px;
+    bottom: 32px;
+  }
+
+  .footer {
+    flex-direction: row;
+  }
+  .footer .footer-title {
+    font-size: 25px;
+    line-height: 31px;
+    margin-bottom: 22px;
+  }
+  .footer .footer-left {
+    width: 50%;
+    padding-left: 240px;
+  }
+  .footer .footer-left .footer-img-area {
+    margin: 81px auto 0;
+    width: 100%;
+    height: 97px;
+    position: relative;
+  }
+  .footer .footer-left .footer-img-area .footer-img {
+    width: 321px;
+  }
+  .footer .footer-left .company-location {
+    margin-bottom: 96px;
+  }
+  .footer .footer-right {
+    width: 50%;
+  }
+  .footer .footer-right .hotline-box {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 74px auto 54px;
+  }
+  .footer .footer-right .hotline-box b {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .footer .footer-right .contact-box {
+    max-width: 516px;
+    margin: 0 auto;
+  }
+  .footer .footer-right .contact-box .form-control {
+    height: 44px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .footer .footer-right .contact-box .btn-send {
+    height: auto;
+    font-size: 16px;
+    line-height: 44px;
+  }
+  .footer .footer-right .contact-box .btn-send .icon-send {
+    margin-right: 11px;
+  }
+  .footer .footer-menu .footer-menu-item {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
