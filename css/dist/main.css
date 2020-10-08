@@ -78,15 +78,15 @@
 }
 
 .hotline-box {
-  height: 64px;
+  height: auto;
   max-width: 300px;
   background: linear-gradient(93.7deg, #FBDE85 9.38%, #EECA75 43.48%, #D7A657 69.22%, #EDC873 97.34%, #C48401 124.27%);
   border-radius: 46px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   text-transform: capitalize;
   color: #634405;
@@ -147,6 +147,17 @@
   height: 25px;
   width: 25px;
   cursor: pointer;
+}
+
+.navbar {
+  padding: 0 !important;
+}
+.navbar .nav-item::hover {
+  color: #FFF;
+}
+
+.container-fluid {
+  padding: 0 !important;
 }
 
 .header {
@@ -249,7 +260,6 @@
   height: 35px;
 }
 .banner .hotline-box {
-  height: 50px;
   font-size: 16px;
   line-height: 20px;
   margin: 20px auto;
@@ -560,6 +570,7 @@
 }
 .footer .footer-left .footer-img-area .footer-img {
   width: 50%;
+  max-width: 300px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -568,7 +579,6 @@
   width: 100%;
 }
 .footer .footer-right .hotline-box {
-  height: 50px;
   margin: 20px auto;
   font-size: 16px;
   line-height: 20px;
@@ -615,128 +625,186 @@
 /*Smart phone*/
 /*Ipad dọc(768 x 1024)*/
 @media screen and (min-width: 768px) {
+  .company-location {
+    margin: 32px auto;
+  }
   .company-location .company-item .company-content {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 25px;
   }
   .company-location .company-item .company-content b {
-    font-size: 30px;
-    line-height: 35px;
-  }
-  .company-location .company-item .company-content .number {
-    font-size: 30px;
-    line-height: 35px;
-  }
-  .company-location .company-item .company-content .number b {
     font-size: 35px;
     line-height: 40px;
   }
+  .company-location .company-item .company-content .number {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .company-location .company-item .company-content .number b {
+    font-size: 40px;
+    line-height: 45px;
+  }
   .company-location .company-item .company-title {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .company-location .location1 {
+    margin: 0;
+    padding: 0;
+  }
+  .company-location .location2 {
+    margin: 0;
+    max-width: 190px;
+  }
+
+  .header {
+    flex-wrap: wrap !important;
+    padding: 0 8px !important;
   }
   .header .header-title {
     font-size: 20px;
+    padding: 0;
   }
   .header .hotline {
     font-size: 20px;
+    padding: 0;
+    min-width: 150px;
   }
 
   .banner .contact-banner .contact-title {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .banner .contact-banner .contact-title2 {
-    font-size: 35px;
-    line-height: 40px;
-  }
-  .banner .contact-box .btn-send {
-    font-size: 20px;
-    line-height: 40px;
-  }
-  .banner .hotline-box {
-    font-size: 20px;
-    line-height: 25px;
-  }
-  .banner .hotline-box b {
-    font-size: 25px;
-  }
-
-  .shophouse .shophouse-header .shophouse-title .shophouse-title1 {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .shophouse .shophouse-header .shophouse-title .shophouse-title2 {
     font-size: 30px;
     line-height: 35px;
+    margin-top: 32px;
   }
-  .shophouse .shophouse-header .shophouse-title .shophouse-title3 {
-    font-size: 16px;
-    line-height: 20px;
+  .banner .contact-banner .contact-title2 {
+    font-size: 40px;
+    line-height: 45px;
+    margin-top: 32px;
   }
-  .shophouse-images .shophouse-images-item .shophouse-item-title {
+  .banner .contact-box {
+    max-width: 450px;
+    margin: 32px auto;
+  }
+  .banner .contact-box .form-control {
+    height: 45px;
+    font-size: 25px;
+  }
+  .banner .contact-box .btn-send {
+    font-size: 25px;
+    line-height: 45px;
+    width: 300px;
+    height: 45px;
+  }
+  .banner .hotline-box {
     font-size: 25px;
     line-height: 30px;
+    margin-top: 50px;
+  }
+  .banner .hotline-box b {
+    font-size: 30px;
+  }
+
+  .shophouse .shophouse-header .shophouse-title {
+    width: 55vw;
+    height: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+  }
+  .shophouse .shophouse-header .shophouse-title .shophouse-title1 {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 16px;
+  }
+  .shophouse .shophouse-header .shophouse-title .shophouse-title2 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+  .shophouse .shophouse-header .shophouse-title .shophouse-title3 {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .shophouse-images .shophouse-images-item .shophouse-item-title {
+    font-size: 30px;
+    line-height: 35px;
   }
 
   .info .info-detail .info-title {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 35px;
+    line-height: 40px;
   }
   .info .info-detail .info-content {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .info2 .info2-content .info2-title {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .info2 .info2-content .info2-detail {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .utilities .utilities-content .utilities-content-title {
-    font-size: 30px;
-    line-height: 35px;
-  }
-  .utilities .utilities-content .utilities-content-detail {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  .flat .flat-title {
-    font-size: 30px;
-    line-height: 35px;
-  }
-  .images .image-item .images-title {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .images .image-item .images-content {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .footer .footer-title {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .footer .footer-right .hotline-box {
     font-size: 20px;
     line-height: 25px;
   }
-  .footer .footer-right .contact-box .form-control {
-    height: 40px;
+
+  .info2 .info2-content .info2-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .info2 .info2-content .info2-detail {
     font-size: 20px;
+    line-height: 25px;
+  }
+
+  .utilities .utilities-content .utilities-content-title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .utilities .utilities-content .utilities-content-detail {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .flat .flat-title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .images .image-item .images-title {
+    font-size: 30px;
+    line-height: 35px;
+    bottom: 70px;
+  }
+  .images .image-item .images-content {
+    font-size: 20px;
+    line-height: 25px;
+    bottom: 16px;
+  }
+
+  .footer .footer-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .footer .footer-right .hotline-box {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .footer .footer-right .hotline-box b {
+    font-size: 30px;
+  }
+  .footer .footer-right .contact-box {
+    max-width: 450px;
+    margin: 32px auto;
+  }
+  .footer .footer-right .contact-box .form-control {
+    height: 45px;
+    font-size: 25px;
   }
   .footer .footer-right .contact-box .btn-send {
-    line-height: 40px;
-    height: 40px;
+    line-height: 45px;
+    font-size: 25px;
+    line-height: 45px;
+    width: 300px;
+    height: 45px;
   }
   .footer .footer-menu .footer-menu-item {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 /*Ipad ngang(1024 x 768)*/

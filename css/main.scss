@@ -14,16 +14,16 @@ $line_height_content1_480: 30px;
 $font_size_title_480: 30px;
 $line_height_title_480: 35px;
 
-$font_size_text_768: 16px;
-$line_height_text_768: 20px;
-$font_size_detail_768: 20px;
-$line_height_detail_768: 25px;
-$font_size_content_768: 25px;
-$line_height_content_768: 30px;
-$font_size_content1_768: 30px;
-$line_height_content1_768: 35px;
-$font_size_title_768: 35px;
-$line_height_title_768: 40px;
+$font_size_text_768: 20px;
+$line_height_text_768: 25px;
+$font_size_detail_768: 25px;
+$line_height_detail_768: 30px;
+$font_size_content_768: 30px;
+$line_height_content_768: 35px;
+$font_size_content1_768: 35px;
+$line_height_content1_768: 40px;
+$font_size_title_768: 40px;
+$line_height_title_768: 45px;
 
 //common-style
 .image-gradient {
@@ -102,15 +102,15 @@ $line_height_title_768: 40px;
   }
 }
 .hotline-box {
-  height: 64px;
+  height: auto;
   max-width: 300px;
   background: linear-gradient(93.7deg, #FBDE85 9.38%, #EECA75 43.48%, #D7A657 69.22%, #EDC873 97.34%, #C48401 124.27%);
   border-radius: 46px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: $font_size_detail_480;
+  line-height: $line_height_detail_480;
   text-align: center;
   text-transform: capitalize;
   color: #634405;
@@ -171,7 +171,17 @@ $line_height_title_768: 40px;
 }
 //End common
 
-
+.navbar {
+  padding: 0 !important;
+  .nav-item {
+    &::hover {
+      color: #FFF;
+    }
+  }
+}
+.container-fluid {
+  padding: 0 !important;
+}
 //header-section
 .header {
   width: 100%;
@@ -272,7 +282,6 @@ $line_height_title_768: 40px;
     }
   }
   .hotline-box {
-    height: 50px;
     font-size: $font_size_detail_480;
     line-height: $line_height_detail_480;
     margin: 20px auto;
@@ -581,6 +590,7 @@ $line_height_title_768: 40px;
       position: relative;
       .footer-img {
         width: 50%;
+        max-width: 300px;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -590,7 +600,6 @@ $line_height_title_768: 40px;
   .footer-right {
     width: 100%;
     .hotline-box {
-      height: 50px;
       margin: 20px auto;
       font-size: $font_size_detail_480;
       line-height: $line_height_detail_480;
@@ -650,6 +659,7 @@ $line_height_title_768: 40px;
 /*Ipad dọc(768 x 1024)*/
 @media screen and (min-width: 768px){
   .company-location {
+    margin: 32px auto;
     .company-item {
       .company-content {
         font-size: $font_size_text_768;
@@ -673,20 +683,29 @@ $line_height_title_768: 40px;
   }
     }
     .location1 {
+      margin: 0;
+      padding: 0;
     }
     .location2 {
+      margin: 0;
+      max-width: 190px;
     }
   }
   .header {
+    flex-wrap: wrap !important;
+    padding: 0 8px !important;
     .logo-header {
     }
     .content-header {
     }
     .header-title {
-      font-size: $font_size_detail_768;
+      font-size: $font_size_text_768;
+      padding: 0;
     }
     .hotline {
-      font-size: $font_size_detail_768;
+      font-size: $font_size_text_768;
+      padding: 0;
+      min-width: 150px;
     }
   }
   //banner-section
@@ -695,10 +714,12 @@ $line_height_title_768: 40px;
       .contact-title {
         font-size: $font_size_content_768;
         line-height: $line_height_content_768;
+        margin-top: 32px;
       }
       .contact-title2 {
         font-size: $font_size_title_768;
         line-height: $line_height_title_768;
+        margin-top: 32px;
       }
     }
     .left-banner {
@@ -709,16 +730,23 @@ $line_height_title_768: 40px;
       }
     }
     .contact-box {
+      max-width: 450px;
+      margin: 32px auto;
       .form-control {
+        height: $line_height_title_768;
+        font-size: $font_size_detail_768;
       }
       .btn-send {
         font-size: $font_size_detail_768;
         line-height: $line_height_title_768;
+        width: 300px;
+        height: 45px;
       }
     }
     .hotline-box {
       font-size: $font_size_detail_768;
       line-height: $line_height_detail_768;
+      margin-top: 50px;
       b {
         font-size: $font_size_content_768;
       }
@@ -730,17 +758,29 @@ $line_height_title_768: 40px;
       .shophouse-img {
       }
       .shophouse-title {
+        width: 55vw;
+        height: 50vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
         .shophouse-title1 {
           font-size: $font_size_content_768;
           line-height: $line_height_content_768;
+          margin-bottom: 16px;
         }
         .shophouse-title2 {
           font-size: $font_size_content1_768;
           line-height: $line_height_content1_768;
+          margin-bottom: 32px;
         }
         .shophouse-title3 {
           font-size: $font_size_text_768;
           line-height: $line_height_text_768;
+          padding: 0;
+          margin: 0;
+          width: 100%;
         }
       }
     }
@@ -832,10 +872,12 @@ $line_height_title_768: 40px;
       .images-title {
         font-size: $font_size_content_768;
         line-height: $line_height_content_768;
+        bottom: 70px;
       }
       .images-content {
         font-size: $font_size_text_768;
         line-height: $line_height_text_768;
+        bottom: 16px;
       }
     }
   }
@@ -856,17 +898,24 @@ $line_height_title_768: 40px;
         font-size: $font_size_detail_768;
         line-height: $line_height_detail_768;
         b {
+          font-size: $font_size_content_768;
         }
       }
       .contact-box {
+        max-width: 450px;
+        margin: 32px auto;
         .form-control {
           height: $line_height_title_768;
           font-size: $font_size_detail_768;
         }
         .btn-send {
           line-height: $line_height_title_768;
-          height: $line_height_title_768;
+          font-size: 25px;
+          line-height: 45px;
+          width: 300px;
+          height: 45px;
           .icon-send {
+            
           }
         }
       }
