@@ -205,6 +205,7 @@ $line_height_title_768: 45px;
     font-size: $font_size_detail_480;
   }
   .hotline {
+    display: inline;
     font-family: Roboto;
     font-size: $font_size_detail_480;
     font-style: normal;
@@ -213,6 +214,17 @@ $line_height_title_768: 45px;
     text-align: right;
     color: #FDED99;
     padding: 2vw;
+  }
+  .hotline1024 {
+    font-family: Roboto;
+    font-size: $font_size_detail_480;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #FDED99;
+    padding: 2vw;
+    display: none;
   }
 }
 //banner-section
@@ -515,14 +527,19 @@ $line_height_title_768: 45px;
 #images {
   margin-top: 16px;
 }
+#images2 {
+  .image-item {
+    margin-bottom: 16px;
+  }
+}
 .images {
-  margin-top: 10px;
+  margin-top: 8px;
   flex-direction: column;
   .image-item {
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     mix-blend-mode: multiply;
     &:last-child {
       margin-bottom: 0;
@@ -563,7 +580,7 @@ $line_height_title_768: 45px;
 }
 //footer-section
 .footer {
-  background-image: url(../../images/3324055-01.png);
+  background-image: url(../../images/Group35.png);
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: column-reverse;
@@ -600,6 +617,7 @@ $line_height_title_768: 45px;
   }
   .footer-right {
     width: 100%;
+    padding-top: 32px;
     .hotline-box {
       margin: 20px auto;
       font-size: $font_size_detail_480;
@@ -934,10 +952,6 @@ $line_height_title_768: 45px;
     }
   }
 }
-/*Ipad ngang(1024 x 768)*/
-@media screen and (min-width: 1024px){
-
-}
 /*Desktop 1920*/
 @media screen and (min-width: 1920px){
   .company-location {
@@ -991,15 +1005,16 @@ $line_height_title_768: 45px;
       margin-left: 101px;
     }
     .hotline {
-      font-size: 18px;
-      line-height: 21px;
-      padding: 0;
-      min-width: 150px;
+      display: none;
+    }
+    .hotline1024 {
+      display: inline;
     }
   }
   //banner-section
   .banner {
     flex-direction: row-reverse;
+    max-height: 1144px;
     .contact-banner {
       min-width: 762px;
       padding-top: 145px;
@@ -1019,6 +1034,7 @@ $line_height_title_768: 45px;
       }
     }
     .left-banner {
+      flex-grow: 1;
       .banner-img {
       }
       .title-banner {
@@ -1248,6 +1264,7 @@ $line_height_title_768: 45px;
     }
     .footer-right {
       width: 50%;
+      padding: 0;
       .hotline-box {
         font-size: 18px;
         line-height: 21px;

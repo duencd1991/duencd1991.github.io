@@ -183,6 +183,7 @@
   font-size: 16px;
 }
 .header .hotline {
+  display: inline;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -191,6 +192,17 @@
   text-align: right;
   color: #FDED99;
   padding: 2vw;
+}
+.header .hotline1024 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #FDED99;
+  padding: 2vw;
+  display: none;
 }
 
 .banner {
@@ -493,15 +505,19 @@
   margin-top: 16px;
 }
 
+#images2 .image-item {
+  margin-bottom: 16px;
+}
+
 .images {
-  margin-top: 10px;
+  margin-top: 8px;
   flex-direction: column;
 }
 .images .image-item {
   width: 100%;
   overflow: hidden;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   mix-blend-mode: multiply;
 }
 .images .image-item:last-child {
@@ -541,7 +557,7 @@
 }
 
 .footer {
-  background-image: url(../../images/3324055-01.png);
+  background-image: url(../../images/Group35.png);
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: column-reverse;
@@ -578,6 +594,7 @@
 }
 .footer .footer-right {
   width: 100%;
+  padding-top: 32px;
 }
 .footer .footer-right .hotline-box {
   margin: 20px auto;
@@ -808,7 +825,6 @@
     line-height: 25px;
   }
 }
-/*Ipad ngang(1024 x 768)*/
 /*Desktop 1920*/
 @media screen and (min-width: 1920px) {
   .company-location {
@@ -858,14 +874,15 @@
     margin-left: 101px;
   }
   .header .hotline {
-    font-size: 18px;
-    line-height: 21px;
-    padding: 0;
-    min-width: 150px;
+    display: none;
+  }
+  .header .hotline1024 {
+    display: inline;
   }
 
   .banner {
     flex-direction: row-reverse;
+    max-height: 1144px;
   }
   .banner .contact-banner {
     min-width: 762px;
@@ -884,6 +901,9 @@
     font-size: 50px;
     line-height: 63px;
     margin: 0;
+  }
+  .banner .left-banner {
+    flex-grow: 1;
   }
   .banner .left-banner .title-banner {
     max-width: 673px;
@@ -1093,6 +1113,7 @@
   }
   .footer .footer-right {
     width: 50%;
+    padding: 0;
   }
   .footer .footer-right .hotline-box {
     font-size: 18px;
