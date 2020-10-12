@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,14 +93,18 @@
           </div>
         </div>
         <div class="contact-title register">ĐĂNG KÝ NHẬN THÔNG TIN DỰ ÁN</div>
-        <div class="contact-box">
-          <input type="text" id="name" class="form-control" placeholder="Họ và tên">
-          <input type="text" id="email" class="form-control" placeholder="Email của bạn">
+        <form name="info-form"  class="contact-box" action="sendEmail.php" method="post">
+          <input type="text" name="username" class="form-control" placeholder="Họ và tên">
+          <input type="text" name="email" class="form-control" placeholder="Email của bạn">
           <div class="d-flex flex-row-reverse">
-            <div class="btn-send"><img class="icon-send" src="images/send.svg"/>ĐĂNG KÝ</div>
-            <input type="text" id="phonenumber" class="form-control" placeholder="Số điện thoại" class="flex-grow-1">
+              <div onClick="document.forms['info-form'].submit();" class="btn-send">
+                <input type="submit" class="submit" name="submit">
+                <img class="icon-send" src="images/send.svg"/>
+                ĐĂNG KÝ
+              </div>
+            <input type="text" name="phonenumber" class="form-control" placeholder="Số điện thoại" class="flex-grow-1">
           </div>
-        </div>
+        </form>
         <div class="hotline-box">
           Hotline<br/><b>0236 3 999 999</b>
         </div>
@@ -306,14 +309,18 @@
           Hotline<br/><b>0236 3 999 999</b>
         </div>
         <div class="footer-title">ĐĂNG KÝ NHẬN THÔNG TIN DỰ ÁN</div>
-        <div class="contact-box">
-          <input type="text" id="name" class="form-control" placeholder="Họ và tên">
-          <input type="text" id="email" class="form-control" placeholder="Email của bạn">
-          <div class="d-flex flex-row-reverse">
-            <div class="btn-send"><img class="icon-send" src="images/send.svg"/>ĐĂNG KÝ</div>
-            <input type="text" id="phonenumber" class="form-control" placeholder="Số điện thoại" class="flex-grow-1">
-          </div>
-        </div>
+        <form name="info-form" class="contact-box" action="sendEmail.php" method="post">
+            <input type="text" name="username" class="form-control" placeholder="Họ và tên">
+            <input type="text" name="email" class="form-control" placeholder="Email của bạn">
+            <div class="d-flex flex-row-reverse">
+              <div onClick="document.forms['info-form'].submit();" class="btn-send">
+                <input type="submit" class="submit" name="submit">
+                <img class="icon-send" src="images/send.svg"/>
+                ĐĂNG KÝ
+              </div>
+              <input type="text" name="phonenumber" class="form-control" placeholder="Số điện thoại" class="flex-grow-1">
+            </div>
+        </form>
         <div class="footer-title">KẾT NỐI VỚI CHÚNG TÔI</div>
         <div class="d-flex socical-box justify-content-around">
           <img class="icon-social" src="images/facebook.png"/>
