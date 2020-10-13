@@ -27,7 +27,7 @@
   font-style: normal;
   font-weight: normal;
   text-align: center;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 16px;
   color: #1B4635;
   background: linear-gradient(294.14deg, #FBDE85 -80.2%, #D8A530 -44.63%, #FBDE84 -11.21%, #E3B74C 35.14%, #FBDE84 68.82%, #C58502 126.77%);
@@ -57,7 +57,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -69,12 +69,11 @@
 }
 .company-location .location1 {
   width: 100%;
-  padding-bottom: 10px;
-  max-width: 300px;
+  padding: 16px;
   margin: auto;
 }
 .company-location .location2 {
-  margin: auto;
+  margin: 0 16px;
 }
 
 .hotline-box {
@@ -331,7 +330,7 @@
   width: 63%;
   padding-right: 10px;
   font-family: Roboto;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 16px;
   font-weight: 400;
   letter-spacing: 0em;
@@ -404,7 +403,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 16px;
   letter-spacing: 0em;
   text-align: left;
@@ -442,7 +441,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 16px;
   text-align: justify;
   font-feature-settings: "cpsp" on;
@@ -473,7 +472,7 @@
 .utilities .utilities-content .utilities-content-detail {
   font-family: Roboto;
   font-style: normal;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 16px;
   text-align: justify;
   font-feature-settings: "cpsp" on;
@@ -554,7 +553,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 16px;
   text-align: center;
   font-feature-settings: "cpsp" on;
@@ -641,7 +640,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 16px;
   text-align: center;
   color: #FFFFFF;
@@ -654,7 +653,7 @@
     margin: 32px auto;
   }
   .company-location .company-item .company-content {
-    font-size: 20px;
+    font-size: 1em;
     line-height: 25px;
   }
   .company-location .company-item .company-content b {
@@ -670,12 +669,13 @@
     line-height: 45px;
   }
   .company-location .company-item .company-title {
-    font-size: 20px;
+    font-size: 1em;
     line-height: 30px;
   }
   .company-location .location1 {
     margin: 0;
     padding: 0;
+    max-width: 300px;
   }
   .company-location .location2 {
     margin: 0;
@@ -687,11 +687,11 @@
     padding: 0 8px !important;
   }
   .header .header-title {
-    font-size: 20px;
+    font-size: 1em;
     padding: 0;
   }
   .header .hotline {
-    font-size: 20px;
+    font-size: 1em;
     padding: 0;
     min-width: 150px;
   }
@@ -711,22 +711,22 @@
     margin: 32px auto;
   }
   .banner .contact-box .form-control {
-    height: 45px;
-    font-size: 25px;
+    height: 35px;
+    font-size: 1em;
   }
   .banner .contact-box .btn-send {
-    font-size: 25px;
-    line-height: 45px;
+    font-size: 1em;
+    line-height: 35px;
     width: 300px;
-    height: 45px;
+    height: line_height_content_768;
   }
   .banner .hotline-box {
-    font-size: 25px;
+    font-size: 1em;
     line-height: 30px;
     margin-top: 50px;
   }
   .banner .hotline-box b {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .shophouse .shophouse-header .shophouse-title {
@@ -749,7 +749,7 @@
     margin-bottom: 32px;
   }
   .shophouse .shophouse-header .shophouse-title .shophouse-title3 {
-    font-size: 20px;
+    font-size: 1em;
     line-height: 25px;
     padding: 0;
     margin: 0;
@@ -768,7 +768,7 @@
     line-height: 40px;
   }
   .info .info-detail .info-content {
-    font-size: 20px;
+    font-size: 1em;
     line-height: 25px;
   }
 
@@ -777,7 +777,7 @@
     line-height: 35px;
   }
   .info2 .info2-content .info2-detail {
-    font-size: 20px;
+    font-size: 1em;
     line-height: 25px;
   }
 
@@ -786,7 +786,7 @@
     line-height: 40px;
   }
   .utilities .utilities-content .utilities-content-detail {
-    font-size: 20px;
+    font-size: 1em;
     line-height: 25px;
   }
   .flat .flat-title {
@@ -802,7 +802,7 @@
     bottom: 70px;
   }
   .images .image-item .images-content {
-    font-size: 20px;
+    font-size: 1em;
     line-height: 25px;
     bottom: 16px;
   }
@@ -834,18 +834,18 @@
     height: 45px;
   }
   .footer .footer-menu .footer-menu-item {
-    font-size: 20px;
+    font-size: 1em;
     line-height: 25px;
   }
 }
 /*Screen 1024 - 1600*/
 @media screen and (min-width: 1024px) {
   .company-location {
-    margin: 38px auto 65px;
+    margin: 32px auto;
     max-width: 646px;
   }
   .company-location .company-item .company-content {
-    font-size: 18px;
+    font-size: 1em;
     line-height: 21px;
   }
   .company-location .company-item .company-content b {
@@ -861,16 +861,16 @@
     line-height: 63px;
   }
   .company-location .company-item .company-title {
-    font-size: 18px;
+    font-size: 1em;
     line-height: 21px;
   }
   .company-location .location1 {
     margin: 0;
-    padding: 22px;
+    padding: 16px 32px;
     max-width: 100%;
   }
   .company-location .location2 {
-    margin: 0 22px;
+    margin: 0 32px;
     max-width: 50%;
   }
 
@@ -880,10 +880,10 @@
     max-width: 1440px;
   }
   .header .header-title {
-    font-size: 18px;
+    font-size: 1em;
     line-height: 21px;
     padding: 0;
-    max-width: 800px;
+    max-width: 650px;
     margin: 0 auto;
   }
   .header .hotline {
@@ -923,25 +923,25 @@
     bottom: 77px;
   }
   .banner .contact-box {
-    max-width: 516px;
-    margin: 14px auto 31px;
+    max-width: 430px;
+    margin: 16px auto;
   }
   .banner .contact-box .form-control {
-    height: 44px;
+    height: 40px;
     font-size: 16px;
   }
   .banner .contact-box .btn-send {
-    height: 44px;
+    height: 40px;
     font-size: 16px;
-    width: 175px;
+    width: 185px;
   }
   .banner .contact-box .btn-send .icon-send {
     margin-right: 11px;
   }
   .banner .hotline-box {
-    font-size: 18px;
+    font-size: 1em;
     line-height: 21px;
-    margin: 0 auto;
+    margin: 22px auto;
   }
   .banner .hotline-box b {
     font-size: 28px;
@@ -1047,7 +1047,7 @@
     margin: 40px auto 16px;
   }
   .info2 .info2-content .info2-detail {
-    font-size: 18px;
+    font-size: 1em;
     line-height: 30px;
     max-width: 629px;
     margin-left: 91px;
@@ -1142,7 +1142,7 @@
     padding: 0;
   }
   .footer .footer-right .hotline-box {
-    font-size: 18px;
+    font-size: 1em;
     line-height: 21px;
     margin: 74px auto 54px;
   }
@@ -1168,12 +1168,12 @@
     margin-right: 11px;
   }
   .footer .footer-menu .footer-menu-item {
-    font-size: 18px;
+    font-size: 1em;
     line-height: 21px;
   }
 }
 /*Desktop 1920*/
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1800px) {
   .company-location {
     margin: 38px auto 65px;
     max-width: 646px;

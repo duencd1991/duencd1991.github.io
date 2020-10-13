@@ -3,7 +3,7 @@ $color_gradient1: linear-gradient(89.46deg, #FBDE85 5.14%, #C48401 24.28%, #F8D8
 $color_gradient2: linear-gradient(294.14deg, #FBDE85 -80.2%, #D8A530 -44.63%, #FBDE84 -11.21%, #E3B74C 35.14%, #FBDE84 68.82%, #C58502 126.77%);
 $color_gradient3: linear-gradient(91.69deg, #C48401 25.17%, #D8A531 60.03%, #E4B94F 89.4%, #C48401 102.08%);
 
-$font_size_text_480: 12px;
+$font_size_text_480: 1em;
 $line_height_text_480: 16px;
 $font_size_detail_480: 16px;
 $line_height_detail_480: 20px;
@@ -14,7 +14,7 @@ $line_height_content1_480: 30px;
 $font_size_title_480: 30px;
 $line_height_title_480: 35px;
 
-$font_size_text_768: 20px;
+$font_size_text_768: 1em;
 $line_height_text_768: 25px;
 $font_size_detail_768: 25px;
 $line_height_detail_768: 30px;
@@ -93,12 +93,11 @@ $line_height_title_768: 45px;
   }
   .location1 {
     width: 100%;
-    padding-bottom: 10px;
-    max-width: 300px;
+    padding: 16px;
     margin: auto;
   }
   .location2 {
-    margin: auto;
+    margin: 0 16px;
   }
 }
 .hotline-box {
@@ -710,6 +709,7 @@ $line_height_title_768: 45px;
     .location1 {
       margin: 0;
       padding: 0;
+      max-width: 300px;
     }
     .location2 {
       margin: 0;
@@ -758,22 +758,22 @@ $line_height_title_768: 45px;
       max-width: 450px;
       margin: 32px auto;
       .form-control {
-        height: $line_height_title_768;
-        font-size: $font_size_detail_768;
+        height: $line_height_content_768;
+        font-size: $font_size_text_768;
       }
       .btn-send {
-        font-size: $font_size_detail_768;
-        line-height: $line_height_title_768;
+        font-size: $font_size_text_768;
+        line-height: $line_height_content_768;
         width: 300px;
-        height: 45px;
+        height: line_height_content_768;
       }
     }
     .hotline-box {
-      font-size: $font_size_detail_768;
+      font-size: $font_size_text_768;
       line-height: $line_height_detail_768;
       margin-top: 50px;
       b {
-        font-size: $font_size_content_768;
+        font-size: $font_size_detail_768;
       }
     }
   }
@@ -965,11 +965,11 @@ $line_height_title_768: 45px;
 /*Screen 1024 - 1600*/
 @media screen and (min-width: 1024px){
   .company-location {
-    margin: 38px auto 65px;
+    margin: 32px auto;
     max-width: 646px;
     .company-item {
       .company-content {
-        font-size: 18px;
+        font-size: 1em;
         line-height: 21px;
         b {
           font-size: 35px;
@@ -985,17 +985,17 @@ $line_height_title_768: 45px;
         }
       }
       .company-title {
-        font-size: 18px;
+        font-size: 1em;
         line-height: 21px;
       }
     }
     .location1 {
       margin: 0;
-      padding: 22px;
+      padding: 16px 32px;
       max-width: 100%;
     }
     .location2 {
-      margin: 0 22px;
+      margin: 0 32px;
       max-width: 50%;
     }
   }
@@ -1008,10 +1008,10 @@ $line_height_title_768: 45px;
     .content-header {
     }
     .header-title {
-      font-size: 18px;
+      font-size: 1em;
       line-height: 21px;
       padding: 0;
-      max-width: 800px;
+      max-width: 650px;
       margin: 0 auto;
     }
     .hotline {
@@ -1053,25 +1053,25 @@ $line_height_title_768: 45px;
       }
     }
     .contact-box {
-      max-width: 516px;
-      margin: 14px auto 31px;
+      max-width: 430px;
+      margin: 16px auto;
       .form-control {
-        height: 44px;
+        height: 40px;
         font-size: 16px;
       }
       .btn-send {
-        height: 44px;
+        height: 40px;
         font-size: 16px;
-        width: 175px;
+        width: 185px;
         .icon-send {
           margin-right: 11px;
         }
       }
     }
     .hotline-box {
-      font-size: 18px;
+      font-size: 1em;
       line-height: 21px;
-      margin: 0 auto;
+      margin: 22px auto;
       b {
         font-size: 28px;
         line-height: 33px;
@@ -1180,7 +1180,7 @@ $line_height_title_768: 45px;
         margin: 40px auto 16px;
       }
       .info2-detail {
-        font-size: 18px;
+        font-size: 1em;
         line-height: 30px;
         max-width: 629px;
         margin-left: 91px;
@@ -1280,7 +1280,7 @@ $line_height_title_768: 45px;
       width: 50%;
       padding: 0;
       .hotline-box {
-        font-size: 18px;
+        font-size: 1em;
         line-height: 21px;
         margin: 74px auto 54px;
         b {
@@ -1313,14 +1313,14 @@ $line_height_title_768: 45px;
     }
     .footer-menu {
       .footer-menu-item {
-        font-size: 18px;
+        font-size: 1em;
         line-height: 21px;
       }
     }
   }
 }
 /*Desktop 1920*/
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1800px){
   .company-location {
     margin: 38px auto 65px;
     max-width: 646px;
