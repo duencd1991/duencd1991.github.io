@@ -8,7 +8,12 @@ $to      = 'nhaphotoanphat.info@gmail.com';
 $subject = 'Get data from Landing-Page';
 
 // Message
-$message = "Họ và tên: $username;\n Email: $email;\n SĐT: $phonenumber";
+// $message = "Họ và tên: $username;\n Email: $email;\n SĐT: $phonenumber";
+$message = '<html><body>';
+$message .= "<p>Họ và tên:".strip_tags($username)."</p>";
+$message .= "<p>Email:".strip_tags($email)."</p>";
+$message .= "<p>SĐT:".strip_tags($phonenumber)."</p>";
+$message .= '</body></html>';
 
 // To send HTML mail, the Content-type header must be set
 $headers[] = 'MIME-Version: 1.0';
@@ -22,4 +27,6 @@ $headers[] = 'From: Get data from Landing-Page <nhaphotoanphat.info@gmail.com>';
 
 // Mail it
 mail($to, $subject, $message, implode("\r\n", $headers));
+header('Location : index.html');
+exit;
 ?>
