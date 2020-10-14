@@ -8,7 +8,7 @@ $to      = 'nhaphotoanphat.info@gmail.com';
 $subject = 'Get data from Landing-Page';
 
 // Message
-$message = "Họ và tên: $username; Email: $email; SĐT: $phonenumber";
+$message = "Họ và tên: $username;\n Email: $email;\n SĐT: $phonenumber";
 
 // To send HTML mail, the Content-type header must be set
 $headers[] = 'MIME-Version: 1.0';
