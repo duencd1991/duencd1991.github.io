@@ -25,28 +25,38 @@
 
     $(document).ready(function(){
   // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+      $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
+      // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-        // Store hash
-        var hash = this.hash;
+          // Store hash
+          var hash = this.hash;
 
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
 
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
     });
-  });
+    function sendEmail() {
+      if (document.getElementById("infoForm")) {
+        document.getElementById("infoForm").submit.click();
+      }
+    }
+    function sendEmail2() {
+      if (document.getElementById("infoForm2")) {
+        document.getElementById("infoForm2").submit.click();
+      }
+    }
   </script>
 </head>
 
@@ -93,11 +103,11 @@
           </div>
         </div>
         <div class="contact-title register">ĐĂNG KÝ NHẬN THÔNG TIN DỰ ÁN</div>
-        <form name="info-form"  class="contact-box" action="sendEmail.php" method="post">
+        <form name="info-form" id="infoForm" class="contact-box" action="sendEmail.php" method="post">
           <input type="text" name="username" class="form-control" placeholder="Họ và tên">
           <input type="text" name="email" class="form-control" placeholder="Email của bạn">
           <div class="d-flex flex-row-reverse">
-              <div onClick="document.forms['info-form'].submit();" class="btn-send">
+              <div onclick="sendEmail()" class="btn-send">
                 <input type="submit" class="submit" name="submit">
                 <img class="icon-send" src="images/send.svg"/>
                 ĐĂNG KÝ
@@ -309,16 +319,16 @@
           Hotline<br/><b>0236 3 999 999</b>
         </div>
         <div class="footer-title">ĐĂNG KÝ NHẬN THÔNG TIN DỰ ÁN</div>
-        <form name="info-form" class="contact-box" action="sendEmail.php" method="post">
-            <input type="text" name="username" class="form-control" placeholder="Họ và tên">
-            <input type="text" name="email" class="form-control" placeholder="Email của bạn">
+        <form name="info-form" id="infoForm2" class="contact-box" action="sendEmail2.php" method="post">
+            <input type="text" name="username2" class="form-control" placeholder="Họ và tên">
+            <input type="text" name="email2" class="form-control" placeholder="Email của bạn">
             <div class="d-flex flex-row-reverse">
-              <div onClick="document.forms['info-form'].submit();" class="btn-send">
+              <div onclick="sendEmail2()" class="btn-send">
                 <input type="submit" class="submit" name="submit">
                 <img class="icon-send" src="images/send.svg"/>
                 ĐĂNG KÝ
               </div>
-              <input type="text" name="phonenumber" class="form-control" placeholder="Số điện thoại" class="flex-grow-1">
+              <input type="text" name="phonenumber2" class="form-control" placeholder="Số điện thoại" class="flex-grow-1">
             </div>
         </form>
         <div class="footer-title">KẾT NỐI VỚI CHÚNG TÔI</div>
