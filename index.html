@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatiable" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
   <title>Landing Page</title>
   <link rel="stylesheet" href="css/dist/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -57,6 +58,12 @@
         document.getElementById("infoForm2").submit.click();
       }
     }
+
+    $(window).resize(function (){
+      if ( $(window).width() < 600 ) {
+        $('a.call-btn).remove();
+      }
+    })
   </script>
 </head>
 
@@ -339,6 +346,9 @@
           <img class="icon-social" src="images/zalo-whit.png"/>
         </div>
       </div>
+      <a class="btn-call" href="tel:+1-303-499-7111">
+        <img src="images/call.svg"/>
+      </a>
     </div>
   </div>
   <!-- Load Facebook SDK for JavaScript -->

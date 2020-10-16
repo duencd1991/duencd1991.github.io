@@ -98,6 +98,7 @@ $line_height_title_768: 45px;
   }
   .location2 {
     margin: 0 16px;
+    width: calc(50% - 32px);
   }
 }
 .hotline-box {
@@ -670,6 +671,15 @@ $line_height_title_768: 45px;
       line-height: $line_height_text_480;
       text-align: center;
       color: #FFFFFF;
+    }
+  }
+  .btn-call {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    img {
+      height: 58px;
+      width: 58px;
     }
   }
 }
@@ -1670,6 +1680,16 @@ $line_height_title_768: 45px;
       .footer-menu-item {
         font-size: 18px;
         line-height: 21px;
+      }
+    }
+
+    .btn-call {
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      img {
+        height: 58px;
+        width: 58px;
       }
     }
   }

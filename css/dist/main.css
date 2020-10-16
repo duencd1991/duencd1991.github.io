@@ -74,6 +74,7 @@
 }
 .company-location .location2 {
   margin: 0 16px;
+  width: calc(50% - 32px);
 }
 
 .hotline-box {
@@ -644,6 +645,15 @@
   line-height: 16px;
   text-align: center;
   color: #FFFFFF;
+}
+.footer .btn-call {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+}
+.footer .btn-call img {
+  height: 58px;
+  width: 58px;
 }
 
 /*Smart phone*/
@@ -1493,5 +1503,14 @@
   .footer .footer-menu .footer-menu-item {
     font-size: 18px;
     line-height: 21px;
+  }
+  .footer .btn-call {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+  }
+  .footer .btn-call img {
+    height: 58px;
+    width: 58px;
   }
 }
