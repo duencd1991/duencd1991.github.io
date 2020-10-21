@@ -649,11 +649,11 @@
 .footer .btn-call {
   position: fixed;
   bottom: 100px;
-  right: 20px;
+  right: 25px;
 }
 .footer .btn-call img {
-  height: 58px;
-  width: 58px;
+  height: 60px;
+  width: 60px;
 }
 
 /*Smart phone*/
@@ -1507,10 +1507,10 @@
   .footer .btn-call {
     position: fixed;
     bottom: 100px;
-    right: 20px;
+    right: 25px;
   }
   .footer .btn-call img {
-    height: 58px;
-    width: 58px;
+    height: 60px;
+    width: 60px;
   }
 }
